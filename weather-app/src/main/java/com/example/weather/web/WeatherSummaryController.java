@@ -49,10 +49,6 @@ public class WeatherSummaryController {
 
 	private WeatherSummary createWeatherSummary(String country, String city,
 			Weather weather) {
-		// cough cough
-		if ("Las Vegas".equals(city)) {
-			weather.setWeatherId(666);
-		}
 		return new WeatherSummary(country, city, weather);
 	}
 
